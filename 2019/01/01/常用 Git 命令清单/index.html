@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Gawin-cong的博客">
 <meta property="og:description" content="一、新建代码库 在当前目录新建一个Git代码库1$ git init  新建一个目录，将其初始化为Git代码库1$ git init [project-name]  下载一个项目和它的整个代码历史1$ git clone [url]">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-07T12:51:34.000Z">
+<meta property="og:updated_time" content="2019-03-07T12:57:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用 Git 命令清单">
 <meta name="twitter:description" content="一、新建代码库 在当前目录新建一个Git代码库1$ git init  新建一个目录，将其初始化为Git代码库1$ git init [project-name]  下载一个项目和它的整个代码历史1$ git clone [url]">
@@ -203,24 +203,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、新建代码库"><a href="#一、新建代码库" class="headerlink" title="一、新建代码库"></a>一、新建代码库</h2><p> 在当前目录新建一个Git代码库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></p>
+        <h3 id="一、新建代码库"><a href="#一、新建代码库" class="headerlink" title="一、新建代码库"></a>一、新建代码库</h3><p> 在当前目录新建一个Git代码库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></p>
 <p> 新建一个目录，将其初始化为Git代码库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init [project-name]</span><br></pre></td></tr></table></figure></p>
 <p> 下载一个项目和它的整个代码历史<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone [url]</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h2 id="二、增加-删除文件"><a href="#二、增加-删除文件" class="headerlink" title="二、增加/删除文件"></a>二、增加/删除文件</h2><p> 添加指定文件到暂存区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add [file1] [file2] ...</span><br></pre></td></tr></table></figure></p>
+<h3 id="二、增加-删除文件"><a href="#二、增加-删除文件" class="headerlink" title="二、增加/删除文件"></a>二、增加/删除文件</h3><p> 添加指定文件到暂存区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add [file1] [file2] ...</span><br></pre></td></tr></table></figure></p>
 <p> 添加指定目录到暂存区，包括子目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add [dir]</span><br></pre></td></tr></table></figure></p>
 <p> 添加当前目录的所有文件到暂存区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure></p>
 <p> 添加每个变化前，都会要求确认<br> 对于同一个文件的多处变化，可以实现分次提交<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add -p</span><br></pre></td></tr></table></figure></p>
 <p> 删除工作区文件，并且将这次删除放入暂存区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rm [file1] [file2] ...</span><br></pre></td></tr></table></figure></p>
 <p> 停止追踪指定文件，但该文件会保留在工作区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rm --cached [file]</span><br></pre></td></tr></table></figure></p>
 <p> 改名文件，并且将这个改名放入暂存区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git mv [file-original] [file-renamed]</span><br></pre></td></tr></table></figure></p>
-<h2 id="三、代码提交"><a href="#三、代码提交" class="headerlink" title="三、代码提交"></a>三、代码提交</h2><p> 提交暂存区到仓库区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m [message]</span><br></pre></td></tr></table></figure></p>
+<h3 id="三、代码提交"><a href="#三、代码提交" class="headerlink" title="三、代码提交"></a>三、代码提交</h3><p> 提交暂存区到仓库区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m [message]</span><br></pre></td></tr></table></figure></p>
 <p> 提交暂存区的指定文件到仓库区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br></pre></td></tr></table></figure></p>
 <p> 提交工作区自上次commit之后的变化，直接到仓库区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -a</span><br></pre></td></tr></table></figure></p>
 <p> 提交时显示所有diff信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -v</span><br></pre></td></tr></table></figure></p>
 <p> 使用一次新的commit，替代上一次提交<br> 如果代码没有任何新变化，则用来改写上一次commit的提交信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend -m [message]</span><br></pre></td></tr></table></figure></p>
 <p>  重做上一次commit，并包括指定文件的新变化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure></p>
-<h2 id="四、分支"><a href="#四、分支" class="headerlink" title="四、分支"></a>四、分支</h2><p> 列出所有本地分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></p>
+<h3 id="四、分支"><a href="#四、分支" class="headerlink" title="四、分支"></a>四、分支</h3><p> 列出所有本地分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></p>
 <p> 列出所有远程分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -r</span><br></pre></td></tr></table></figure></p>
 <p> 列出所有本地分支和远程分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></p>
 <p> 新建一个分支，但依然停留在当前分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch [branch-name]</span><br></pre></td></tr></table></figure></p>
@@ -234,7 +234,7 @@
 <p> 选择一个commit，合并进当前分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git cherry-pick [commit]</span><br></pre></td></tr></table></figure></p>
 <p> 删除分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d [branch-name]</span><br></pre></td></tr></table></figure></p>
 <p> 删除远程分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote/branch]</span><br></pre></td></tr></table></figure></p>
-<h2 id="五、查看信息"><a href="#五、查看信息" class="headerlink" title="五、查看信息"></a>五、查看信息</h2><p> 显示有变更的文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure></p>
+<h3 id="五、查看信息"><a href="#五、查看信息" class="headerlink" title="五、查看信息"></a>五、查看信息</h3><p> 显示有变更的文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure></p>
 <p> 显示当前分支的版本历史<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git log</span><br></pre></td></tr></table></figure></p>
 <p> 显示commit历史，以及每次commit发生变更的文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git log --stat</span><br></pre></td></tr></table></figure></p>
 <p>  搜索提交历史，根据关键词<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git log -S [keyword]</span><br></pre></td></tr></table></figure></p>
@@ -254,7 +254,7 @@
 <p>  显示某次提交发生变化的文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git show --name-only [commit]</span><br></pre></td></tr></table></figure></p>
 <p>  显示某次提交时，某个文件的内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git show [commit]:[filename]</span><br></pre></td></tr></table></figure></p>
 <p>  显示当前分支的最近几次提交<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br></pre></td></tr></table></figure></p>
-<h2 id="六、撤销"><a href="#六、撤销" class="headerlink" title="六、撤销"></a>六、撤销</h2><p>  恢复暂存区的指定文件到工作区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout [file]</span><br></pre></td></tr></table></figure></p>
+<h3 id="六、撤销"><a href="#六、撤销" class="headerlink" title="六、撤销"></a>六、撤销</h3><p>  恢复暂存区的指定文件到工作区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout [file]</span><br></pre></td></tr></table></figure></p>
 <p>  恢复某个commit的指定文件到暂存区和工作区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout [commit] [file]</span><br></pre></td></tr></table></figure></p>
 <p>  恢复暂存区的所有文件到工作区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout .</span><br></pre></td></tr></table></figure></p>
 <p>  重置暂存区的指定文件，与上一次commit保持一致，但工作区不变<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset [file]</span><br></pre></td></tr></table></figure></p>
@@ -380,7 +380,7 @@
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          pjax: 当ajax遇上pushState
+          当ajax遇上pushState
         
       </div>
     </a>
@@ -512,15 +512,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
             
             <div class="clearfix"></div>
